@@ -25,6 +25,7 @@ form {
 }
 
 label {
+    display: flex;
     font-weight: bold;
     margin-top: 5px;
 }
@@ -49,4 +50,19 @@ button {
     color: #fff;
     cursor: pointer;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 540px) {
+    body {
+        text-align: center;
+    }
+    form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 100%;
+    }
 }
