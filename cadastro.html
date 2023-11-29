@@ -11,32 +11,26 @@
 
     <form class="formLogin" id="form">
         <h2>CADASTRAR NOVO VISITANTE</h2>
-        <label for="name">Nome</label>
-        <input type="text" id="name">
+        <input type="text" id="name" placeholder="Nome">
 
-        <label for="phone">Telefone</label>
-        <input type="text" id="phone">
+        <input type="text" id="phone" placeholder="Telefone">
 
-        <label for="address">Endereço</label>
-        <input type="text" id="address">
+        <input type="text" id="address" placeholder="Endereço">
 
-        <label for="city">Cidade e Estado</label>
-        <input type="text" id="city">
+        <input type="text" id="city" placeholder="Cidade e Estado">
 
         <!--LINHA DE CÓDIGO SERÁ UTILIZADO EM OUTRA SESSÃO
         <label for="dia" id="dia">Dia da Visita</label>
         <input type="date" id="date"> -->
 
-        <label for="gender">Gênero</label>
+        <input type="number" id="age" placeholder="Idade">
+        
         <select name="gender" id="gender">
-            <option select>Gênero</option>
+            <option select></option>
             <option value="">Homem</option>
             <option value="">Mulher</option>
         </select>
         
-        <label for="age">Idade</label>
-        <input type="text" id="age">
-
         <!-- DEIXANDO O SELETOR CIDADE MAIS SIMPLES
             <select name="city" id="city">
             <option selected>Cidade</option>
@@ -61,8 +55,7 @@
         </select>
         <input type="text" name="grupo" placeholder="Outra"> -->
 
-        <label for="religion">Religião</label>
-        <input type="text" id="religion">
+        <input type="text" id="religion" placeholder="Religião">
         
         <!-- DEIXANDO O SELETOR RELIGIÃO MAIS SIMPLES
             <select name="religion" id="religion">
@@ -79,7 +72,7 @@
         </select>
         <input type="text" name="grupo" placeholder="Outra"> -->
 
-        <label for="pg">Frequenta Pequeno grupo?</label>
+        <label for="pg"><h4 class="texto">Frequenta Pequeno grupo?</h4></label>
         <input type="text" id="pg">
         
         <!-- QUESTIONAMENTOS INICIALMENTE SERÃO FEITOS COMO TEXTAREA 
@@ -90,7 +83,7 @@
         <label class="form-check-label" for="flexRadioDefault">Sim</label></div>  
         <input type="text" name="grupo" placeholder="Qual?"> -->
                    
-        <label for="bible">Está estudando a Bíblia?</label>
+        <label for="bible"><h4 class="texto">Está estudando a Bíblia?</h4></label>
         <input type="text" id="bible">
 
         <!-- QUESTIONAMENTOS INICIALMENTE SERÃO FEITOS COMO TEXTAREA
