@@ -8,34 +8,29 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-
+    
     <form class="formLogin" id="form">
         <h2>CADASTRAR NOVO VISITANTE</h2>
-        <label for="name">Nome</label>
-        <input type="text" id="name">
+        <input type="text" id="name" placeholder="Nome">
 
-        <label for="tel">Telefone</label>
-        <input type="text" id="tel">
+        <input type="text" id="phone" placeholder="Telefone">
 
-        <label for="adress">Endereço</label>
-        <input type="text" id="adress">
+        <input type="text" id="address" placeholder="Endereço">
+
+        <input type="text" id="city" placeholder="Cidade e Estado">
 
         <!--LINHA DE CÓDIGO SERÁ UTILIZADO EM OUTRA SESSÃO
         <label for="dia" id="dia">Dia da Visita</label>
         <input type="date" id="date"> -->
 
-        <select name="sex" id="sex">
-            <option selected>Sexo</option>
+        <input type="number" id="age" placeholder="Idade">
+        
+        <select name="gender" id="gender">
+            <option select></option>
             <option value="">Homem</option>
             <option value="">Mulher</option>
         </select>
         
-        <label for="age">Idade</label>
-        <input type="text" id="age">
-
-        <label for="city">Cidade</label>
-        <input type="text" id="city">
-
         <!-- DEIXANDO O SELETOR CIDADE MAIS SIMPLES
             <select name="city" id="city">
             <option selected>Cidade</option>
@@ -60,8 +55,7 @@
         </select>
         <input type="text" name="grupo" placeholder="Outra"> -->
 
-        <label for="religion">Religião</label>
-        <input type="text" id="religion">
+        <input type="text" id="religion" placeholder="Religião">
         
         <!-- DEIXANDO O SELETOR RELIGIÃO MAIS SIMPLES
             <select name="religion" id="religion">
@@ -78,8 +72,8 @@
         </select>
         <input type="text" name="grupo" placeholder="Outra"> -->
 
-        <h4>Frequenta Pequeno grupo?</h4>
-        <input type="text">
+        <label for="pg"><h4 class="texto">Frequenta Pequeno grupo?</h4></label>
+        <input type="text" id="pg">
         
         <!-- QUESTIONAMENTOS INICIALMENTE SERÃO FEITOS COMO TEXTAREA 
         <div class="row">
@@ -89,8 +83,8 @@
         <label class="form-check-label" for="flexRadioDefault">Sim</label></div>  
         <input type="text" name="grupo" placeholder="Qual?"> -->
                    
-        <h4>Está estudando a Bíblia?</h4>
-        <input type="text">
+        <label for="bible"><h4 class="texto">Está estudando a Bíblia?</h4></label>
+        <input type="text" id="bible">
 
         <!-- QUESTIONAMENTOS INICIALMENTE SERÃO FEITOS COMO TEXTAREA
         <div class="row">
@@ -100,9 +94,10 @@
         <label class="form-check-label" for="flexRadioDefault">Sim</label></div>        
         <input type="text" name="grupo" placeholder="Com quem?"> -->
 
+        <!-- RETIRADA A DATA DE BATISMO
         <h4>Data de Batismo</h4>
         <label for="batism" id="batism"></label>
-        <input type="date" id="date">
+        <input type="date" id="date"> -->
 
         <button class="btn" class="submit">Cadastrar</button>
         <a class="but4" href="options.html"><h3>Voltar</h3></a>

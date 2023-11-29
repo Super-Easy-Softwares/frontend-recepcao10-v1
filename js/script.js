@@ -1,15 +1,15 @@
 const form = document.querySelector ("#form");
 const nameInput = document.querySelector ("#name");
-const telInput = document.querySelector ("#tel");
-const adressInput = document.querySelector ("#adress");
+const name2Input = document.querySelector ("#name2");
+const phoneInput = document.querySelector ("#phone");
+const addressInput = document.querySelector ("#address");
 const dateInput = document.querySelector ("#date");
-const sexSelect = document.querySelector ("#sex");
+const genderSelect = document.querySelector ("#gender");
 const ageInput = document.querySelector ("#age");
-const citySelect = document.querySelector ("#city");
-const religionSelect = document.querySelector ("#religion");
-const flexRadioDefaultInput = document.querySelector ("#flexRadioDefault");
-const flexRadioDefault2Input = document.querySelector ("#flexRadioDefault2");
-const batismInput = document.querySelector ("#batism");
+const cityInput = document.querySelector ("#city");
+const religionInput = document.querySelector ("#religion");
+const pgInput = document.querySelector ("#pg");
+const bibleInput = document.querySelector ("#bible");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -21,26 +21,20 @@ form.addEventListener("submit", (event) => {
     }
 
     // VERIFICA SE O TELEFONE ESTÁ VAZIO
-    if(telInput.value === "") {
+    if(phoneInput.value === "") {
         alert("Preencha um telefone válido!");
         return;
     }
 
     // VERIFICA SE O ENDEREÇO ESTÁ VAZIO
-    if(adressInput.value === "") {
+    if(addressInput.value === "") {
         alert("Preencha um endereço!");
         return;
     }
 
-    // VERIFICA SE A DATA DE VISITA FOI ESCOLHIDA
-    if(dateInput.value === "") {
-        alert("Escolha a data da visita!");
-        return;
-    }
-
-    // VERIFICA SE HOUVE MARCAÇÃO DE SEXO
-    if(sexSelect.value === "Sexo") {
-        alert("Escolha um gênero!");
+    // VERIFICA SE O CAMPO CIDADE E ESTADO ESTÁ VAZIO
+    if(cityInput.value === "") {
+        alert("Preencha cidade e estado!");
         return;
     }
 
@@ -50,27 +44,40 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
-    // VERIFICA SE A CIDADE FOI SELECIONADA
-    if(citySelect.value === "Cidade") {
-        alert("Selecione a cidade!");
+
+    // VERIFICA SE O CAMPO CIDADE E ESTADO ESTÁ VAZIO
+    if(cityInput.value === "") {
+        alert("Preencha cidade e estado!");
+        return;
+    }
+   
+    // VERIFICA SE O CAMPO CIDADE E ESTADO ESTÁ VAZIO
+    if(cityInput.value === "") {
+        alert("Preencha cidade e estado!");
+        return;
+    }
+
+    // VERIFICA SE HOUVE MARCAÇÃO DE GêNERO
+    if(genderSelect.value === "Gênero") {
+        alert("Escolha um gênero!");
         return;
     }
 
     // VERIFICA SE A RELIGIÃO FOI SELECIONADA
-    if(religionSelect.value === "Religião") {
+    if(religionInput.value === "") {
         alert("Selecione a religião do visitante!");
         return;
     }
 
-    // VERIFICA SE A QUESTÃO 01 FOI RESPONDIDA
-    if(flexRadioDefaultInput.value === "") {
-        alert("Responda se o visitante participa de algum pequeno grupo!");
+    // VERIFICA SE A PERGUNTA SOBRE PEQUENO GRUPO FOI RESPONDIDA
+    if(pgInput.value === "") {
+        alert("Preencha se o visitante frequenta pequeno grupo!");
         return;
     }
 
-    // VERIFICA SE A QUESTÃO 02 FOI RESPONDIDA
-    if(flexRadioDefault2Input.value === "") {
-        alert("Responda se o visitante faz estudo bíblico!");
+    // VERIFICA SE A PERGUNTA SOBRE ESTUDO BÍBLICO FOI RESPONDIDO
+    if(bibleInput.value === "") {
+        alert("Preencha se o visitante pratica estudos bíblicos!");
         return;
     }
 
