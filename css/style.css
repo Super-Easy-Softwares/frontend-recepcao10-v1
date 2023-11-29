@@ -20,6 +20,10 @@ h4 {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 form {
     display: flex;
     flex-direction: column;

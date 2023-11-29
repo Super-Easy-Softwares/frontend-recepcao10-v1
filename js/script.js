@@ -1,10 +1,12 @@
 const form = document.querySelector ("#form");
 const nameInput = document.querySelector ("#name");
+const name2Input = document.querySelector ("#name2");
 const phoneInput = document.querySelector ("#phone");
 const addressInput = document.querySelector ("#address");
 const dateInput = document.querySelector ("#date");
 const genderSelect = document.querySelector ("#gender");
 const ageInput = document.querySelector ("#age");
+const age2Input = document.querySelector ("#age2");
 const cityInput = document.querySelector ("#city");
 const religionInput = document.querySelector ("#religion");
 const pgInput = document.querySelector ("#pg");
@@ -16,6 +18,12 @@ form.addEventListener("submit", (event) => {
     // VERIFICA SE O NOME ESTÁ VAZIO
     if(nameInput.value === "") {
         alert("Preencha um nome!");
+        return;
+    }
+
+    // VERIFICA SE O NOME DE ALTERAÇÃO ESTÁ VAZIO
+    if(name2Input.value === "") {
+        alert("Preencha um novo nome!");
         return;
     }
 
@@ -31,6 +39,12 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
+    // VERIFICA SE A IDADE ESTÁ VAZIA
+    if(ageInput.value === "") {
+        alert("Selecione a idade!");
+        return;
+    }
+
     // VERIFICA SE O CAMPO CIDADE E ESTADO ESTÁ VAZIO
     if(cityInput.value === "") {
         alert("Preencha cidade e estado!");
@@ -40,12 +54,6 @@ form.addEventListener("submit", (event) => {
     // VERIFICA SE HOUVE MARCAÇÃO DE GêNERO
     if(genderSelect.value === "Gênero") {
         alert("Escolha um gênero!");
-        return;
-    }
-
-    // VERIFICA SE A IDADE ESTÁ VAZIA
-    if(ageInput.value === "") {
-        alert("Selecione a idade!");
         return;
     }
 
