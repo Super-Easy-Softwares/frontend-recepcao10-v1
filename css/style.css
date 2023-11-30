@@ -334,8 +334,9 @@ h3 {
     opacity: 0;
 }
 
-label {
+label #alt {
     cursor: pointer;
+    font-size: larger;
     position: relative;
     display: block;
     height: 22px;
@@ -393,4 +394,12 @@ nav {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+}
+
+.collapse {
+    display: none;
+}
+
+.label:active + .collapse {
+    display: flex;    
 }
