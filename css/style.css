@@ -6,7 +6,6 @@
 body {
     padding: 1rem;
     background-color: #faf6ea;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -87,16 +86,11 @@ button {
     font-family: Helvetica;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
     body {
         text-align: center;
     }
-    form {
-        width: 100%;
-    }
-}
 
-@media screen and (max-width: 768px) {
     form {
         width: 100%;
     }
@@ -275,15 +269,14 @@ h3 {
 /* NAVBAR */
 
 .container {
-    height: 100%;
-    display: block;
+    display: flex;
     align-items: left;
-    justify-content: left;
+    justify-content: flex-start;
     padding: 3%;
 }
 
 #checkbox-menu {
-    position: absolute;
+    position: fixed;
     opacity: 0;
 }
 
