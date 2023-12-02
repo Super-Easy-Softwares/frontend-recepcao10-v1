@@ -178,7 +178,7 @@ select {
     text-align: center;
     font-family: Helvetica;
     font-size: 14px;
-    background-color: #24c707;
+    background-color: #32eb11;
     border-radius: 15px;
     color: #fff;
     margin: none;
@@ -189,7 +189,7 @@ select {
     text-decoration: none;
     border: none;
     border-radius: 15px;
-    background-color: #b8b814;
+    background-color: #919109;
     color: #fff;
     width: 100%;
     height: 45px;
@@ -201,7 +201,7 @@ select {
     text-decoration: none;
     border: none;
     border-radius: 15px;
-    background-color: #b8b814;
+    background-color: #919109;
     color: #fff;
     width: 80%;
     height: 10%;
@@ -223,7 +223,7 @@ h3 {
 }
 
 .btn {
-    background-color: #24c707;
+    background-color: #32eb11;
     height: 45px;
     border-radius: 15px;
     color: #fff;
