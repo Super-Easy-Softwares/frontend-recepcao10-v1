@@ -6,10 +6,10 @@ const addressInput = document.querySelector ("#address");
 const dateInput = document.querySelector ("#date");
 const genderSelect = document.querySelector ("#gender");
 const ageInput = document.querySelector ("#age");
-const cityInput = document.querySelector ("#city");
+const cityAndStateInput = document.querySelector ("#cityAndState");
 const religionInput = document.querySelector ("#religion");
-const pgInput = document.querySelector ("#pg");
-const bibleInput = document.querySelector ("#bible");
+const smallGroupInput = document.querySelector ("#smallGroup");
+const bibleStudyInput = document.querySelector ("#bibleStudy");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -33,7 +33,7 @@ form.addEventListener("submit", (event) => {
     }
 
     // VERIFICA SE O CAMPO CIDADE E ESTADO ESTÁ VAZIO
-    if(cityInput.value === "") {
+    if(cityAndStateInput.value === "") {
         alert("Preencha cidade e estado!");
         return;
     }
@@ -46,13 +46,13 @@ form.addEventListener("submit", (event) => {
 
 
     // VERIFICA SE O CAMPO CIDADE E ESTADO ESTÁ VAZIO
-    if(cityInput.value === "") {
+    if(cityAndStateInput.value === "") {
         alert("Preencha cidade e estado!");
         return;
     }
    
     // VERIFICA SE O CAMPO CIDADE E ESTADO ESTÁ VAZIO
-    if(cityInput.value === "") {
+    if(cityAndStateInput.value === "") {
         alert("Preencha cidade e estado!");
         return;
     }
@@ -70,13 +70,13 @@ form.addEventListener("submit", (event) => {
     }
 
     // VERIFICA SE A PERGUNTA SOBRE PEQUENO GRUPO FOI RESPONDIDA
-    if(pgInput.value === "") {
+    if(smallGroupInput.value === "") {
         alert("Preencha se o visitante frequenta pequeno grupo!");
         return;
     }
 
     // VERIFICA SE A PERGUNTA SOBRE ESTUDO BÍBLICO FOI RESPONDIDO
-    if(bibleInput.value === "") {
+    if(bibleStudyInput.value === "") {
         alert("Preencha se o visitante pratica estudos bíblicos!");
         return;
     }

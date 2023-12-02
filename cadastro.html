@@ -9,15 +9,24 @@
 </head>
 <body>
     
+    <div class="container">
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+        
     <form class="formLogin" id="form">
-        <h2>CADASTRAR NOVO VISITANTE</h2>
+        <h2>CADASTRAR VISITANTE</h2>
         <input type="text" id="name" placeholder="Nome">
 
         <input type="text" id="phone" placeholder="Telefone">
 
         <input type="text" id="address" placeholder="Endereço">
 
-        <input type="text" id="city" placeholder="Cidade e Estado">
+        <input type="text" id="cityAndState" placeholder="Cidade e Estado">
 
         <!--LINHA DE CÓDIGO SERÁ UTILIZADO EM OUTRA SESSÃO
         <label for="dia" id="dia">Dia da Visita</label>
@@ -72,7 +81,7 @@
         </select>
         <input type="text" name="grupo" placeholder="Outra"> -->
 
-        <input type="text" id="pg" placeholder="Frequenta Pequeno grupo?">
+        <input type="text" id="smallGroup" placeholder="Frequenta Pequeno grupo? Se sim, qual?">
         
         <!-- QUESTIONAMENTOS INICIALMENTE SERÃO FEITOS COMO TEXTAREA 
         <div class="row">
@@ -82,7 +91,7 @@
         <label class="form-check-label" for="flexRadioDefault">Sim</label></div>  
         <input type="text" name="grupo" placeholder="Qual?"> -->
                    
-        <input type="text" id="bible" placeholder="Está estudando a Bíblia?">
+        <input type="text" id="bibleStudy" placeholder="Faz estudo bíblico? Se sim, com quem?">
 
         <!-- QUESTIONAMENTOS INICIALMENTE SERÃO FEITOS COMO TEXTAREA
         <div class="row">
@@ -98,7 +107,7 @@
         <input type="date" id="date"> -->
 
         <button class="btn" class="submit">Cadastrar</button>
-        <a class="but4" href="options.html"><h3>Voltar</h3></a>
+        <a class="but3" href="options.html"><h3>Voltar</h3></a>
     </form>
 </body>
 </html>

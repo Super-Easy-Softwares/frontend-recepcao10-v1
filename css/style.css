@@ -6,9 +6,6 @@
 body {
     padding: 1rem;
     background-color: #faf6ea;
-    justify-content: center;
-    align-items: center;
-    font-family: Helvetica;
 }
 
 h1 {
@@ -19,6 +16,8 @@ h1 {
 h2 {
     text-decoration: none;
     color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h4 {
@@ -32,8 +31,19 @@ h4, .texto {
     text-align: left;
 }
 
+h5 {
+    color: #000;font-style: bolder;
+}
+
 a {
     text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 form {
@@ -42,11 +52,6 @@ form {
     gap: .5rem;
     width: 500px;
     margin: o auto;
-}
-
-label {
-    font-weight: bold;
-    margin-top: 5px;
 }
 
 .row {
@@ -65,7 +70,8 @@ input, select, textarea {
 button {
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
     background-color: #333;
     color: #fff;
     cursor: pointer;
@@ -73,7 +79,6 @@ button {
 }
 
 .but5 {
-    padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     color: #fff;
@@ -81,18 +86,14 @@ button {
     font-weight: bolder;
     letter-spacing: 2px;
     font-family: Helvetica;
-}
-
-@media screen and (max-width: 540px) {
-    body {
-        text-align: center;
-    }
-    form {
-        width: 100%;
-    }
+    font-size: bolder;
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
     form {
         width: 100%;
     }
@@ -107,7 +108,7 @@ button {
     align-content: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 99vh;
     background-color: #faf6ea;
     padding: 1rem;
     justify-content: flex-start;
@@ -121,7 +122,7 @@ button {
     border-radius: 7px;
     padding: 40px;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
-    gap: 5px
+    gap: 5px;
 }
 
 .areaLogin img {
@@ -142,12 +143,16 @@ button {
     margin-bottom: 25px;
 }
 
+select {
+    padding: 4px;
+}
+
 .formLogin input {
-    padding: 15px;
+    padding: 7px;
     font-size: 14px;
     border: 1px solid #ccc;
-    margin-bottom: 20px;
-    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 2px;
     border-radius: 4px;
     transition: all linear 160ms;
     outline: none;
@@ -169,46 +174,39 @@ button {
 .but {
     text-decoration: none;
     display: flex;
-    height: 45px;
+    height: 10%;
     text-align: center;
     font-family: Helvetica;
     font-size: 14px;
     background-color: #24c707;
-    border-radius: 5px;
+    border-radius: 15px;
     color: #fff;
     margin: none;
     border: none;
 }
 
-.but2 {
-    text-decoration: none;
-    width: 100%;
-    height: 35px;
-    font-family: Helvetica;
-    font-size: 12px;
-    background-color: #ec5353;
-    border-radius: 5px;
-    color: #fff;
-}
-
 .but3 {
     text-decoration: none;
     border: none;
-    border-radius: 5px;
-    background-color: #b8b814;
-    color: #fff;
-    width: 85%;
-    font-weight: 600;
-}
-
-.but4 {
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #b8b814;
     color: #fff;
     width: 100%;
-    font-weight: 600;
+    height: 45px;
+    margin: 0;
+    font-weight: 200;
+}
+
+.butback {
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    background-color: #b8b814;
+    color: #fff;
+    width: 80%;
+    height: 10%;
+    font-weight: 400;
+    padding-bottom: auto;
 }
 
 .but5 {
@@ -226,39 +224,23 @@ h3 {
 
 .btn {
     background-color: #24c707;
-    height: 50px;
+    height: 45px;
+    border-radius: 15px;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
-    border: none !important;
+    border: none;
     transition: all linear 160ms;
     cursor: pointer;
-    margin: 0 !important;
+    margin: 0;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.button {
-    display: inline-block;
-    padding: 1rem;
-    border-radius: 5px;
-    font-weight: 800;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    color: white;
-    background-color: #c70707;
-    transition: .3s;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    box-shadow: 0 0 10px 0px black;
-  }
+/* ESTIILIZANDO PÁGINA DE CARDS PARA CADASTRO E ALTERAÇÕES */
 
-  /* ESTIILIZANDO PÁGINA DE CARDS PARA CADASTRO E ALTERAÇÕES */
-
-  .secao4 {
+.secao4 {
     margin: 0;
     font-family: Helvetica, sans-serif;
 }
@@ -267,30 +249,29 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
     text-align: center;
+}
+
+.secao4-div-card img {
+    padding-top: 10%;
+    max-width:60px;
+    max-height:90px;
 }
 
 .secao4-div-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% / 3 - 60px);
-    margin: 10px;
-    padding: 20px;
+    width: 10px;
+    margin: 5px;
     box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: white;
-    transition: all 0.5s ease;
-}
-
-.secao4-div-card:hover {
-    transform: scale(1.1);
-    z-index: 1;
+    height: 130px;
 }
 
 .secao4-div-card img {
-    width: 35%;
+    width: 50%;
     height: auto;
 }
 
@@ -301,6 +282,66 @@ h3 {
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     .secao4-div-card {
-        width: 100%;
+        width: 80%;
     }
+}
+
+/* NAVBAR */
+
+.container {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    padding: 2%;
+    height: 0;
+}
+
+#checkbox-menu {
+    position: fixed;
+    opacity: 0;
+}
+
+label #alt {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span {
+    position: absolute;
+    margin-top: 3%;
+    display: block;
+    height: 3px;
+    width: 6%;
+    border-radius: 30px;
+    background: #000;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+
+label span:nth-child(2) {
+    top: 8px;
+}
+
+label span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
 }

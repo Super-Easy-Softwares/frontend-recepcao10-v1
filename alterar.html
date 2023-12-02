@@ -9,25 +9,34 @@
 </head>
 <body>
 
+    <div class="container">
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+
     <form class="formLogin" id="form">
-        <h2>ALTERAÇÃO DE VISITANTE</h2>
-        <label for="name">Nome</label>
+        <h2>ALTERAR VISITANTE</h2>
+        <label for="name" id="alt"><font size="4">Nome</font></label>
         <input type="text" id="name" placeholder="Insira o visitante para alterar">
 
         
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button type="button" class="but5">Excluir registro</button>
+            <button type="button" class="but5">Excluir</button>
         </div>
 
-        <label for="name">Alterar dados</label>
-        <input type="text" id="name" placeholder="Nome">
-        <input type="text" id="phone" placeholder="Telefone">
-        <input type="text" id="address" placeholder="Endereço">
-        <input type="text" id="city" placeholder="Cidade">
-        <input type="text" id="age" placeholder="Idade">
+        <label for="name" id="alt"><font size="4">Alterar dados</font></label>
+        <input type="text" id="nameReplace" placeholder="Nome">
+        <input type="text" id="phoneReplace" placeholder="Telefone">
+        <input type="text" id="addressReplace" placeholder="Endereço">
+        <input type="text" id="cityAndStateReplace" placeholder="Cidade">
+        <input type="number" id="ageReplace" placeholder="Idade">
 
         <button class="btn" class="submit">Alterar</button>
-        <a class="but4" href="options.html"><h3>Voltar</h3></a>
+        <a class="but3" href="options.html"><h3>Voltar</h3></a>
     </form>
 </body>
 </html>
