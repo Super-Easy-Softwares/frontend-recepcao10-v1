@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-    <div class="page">
-        <form method="POST" class="formLogin">
-            <h1><strong>BEM VINDO</strong></h1>
-            <center>
-                <img src="Image/iglesia-adventista-logo-7080BAF6CD-seeklogo.com.png" alt="logo" width=150 height=100>
-            </center><br><br>
-            <label for="email"><h4>Login</h4></label>
-            <input type="email" placeholder="Digite seu e-mail" />
-            <label for="password"><h4>Senha</h4></label>
-            <input type="password" placeholder="Digite sua senha" />
-            <a class="btn" href="options.html"><h3>LOGIN</h3></a>
-        </form>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="button" onclick="redirectToOptions()">Entrar</button>
+      </form>
+      <p class="forgot-password"><a href="#">Esqueceu sua senha?</a></p>
     </div>
-    
-</body>
+
+    <script src="js/script.js"></script>
+    <script>
+      function redirectToOptions() {
+        window.location.href = "options.html";
+      }
+    </script>
+  </body>
 </html>

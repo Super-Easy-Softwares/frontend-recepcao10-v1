@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atualizar Usuário</title>
+    <link rel="stylesheet" href="./css/atualizar.css" />
+  </head>
+  <body class="atualizar-page">
+    <!-- Barra de Navegação -->
+    <div class="navbar">
+      <a href="options.html">Opções</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="#">Atualizar</a>
+      <a href="relatorios.html">Relatórios</a>
+    </div>
+
+    <!-- Conteúdo da Tela de Atualização -->
+    <div class="options-container">
+      <h2>Atualizar Usuário</h2>
+      <label for="buscaUsuario">Buscar Usuário:</label>
+      <select id="buscaUsuario" name="buscaUsuario" onchange="exibirCampos()">
+        <option value="" disabled selected>Selecione um usuário</option>
+        <option value="Edilson">Edilson</option>
+        <option value="Rose">Rose</option>
+        <option value="Adriana">Adriana</option>
+        <option value="Luciana">Luciana</option>
+        <option value="Lucas">Lucas</option>
+      </select>
+
+      <!-- Campos que serão exibidos após selecionar um usuário -->
+      <div id="camposAtualizacao" style="display: none">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required />
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required />
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required />
+
+        <label for="cidadeEstado">Cidade e Estado:</label>
+        <input type="text" id="cidadeEstado" name="cidadeEstado" required />
+
+        <label for="frequentaPequenoGrupo">Frequenta Pequeno Grupo:</label>
+        <select
+          id="frequentaPequenoGrupo"
+          name="frequentaPequenoGrupo"
+          required
+        >
+          <option value="nao">Não</option>
+          <option value="sim">Sim</option>
+        </select>
+
+        <label for="estudaBiblia">Estuda a Bíblia:</label>
+        <select id="estudaBiblia" name="estudaBiblia" required>
+          <option value="nao">Não</option>
+          <option value="sim">Sim</option>
+        </select>
+
+        <button type="button" onclick="salvarAtualizacao()">Salvar</button>
+        <button
+          type="button"
+          onclick="cancelarAtualizacao()"
+          class="cancelar-button"
+        >
+          Cancelar
+        </button>
+      </div>
+    </div>
+
+    <script src="js/atualizar.js"></script>
+  </body>
+</html>

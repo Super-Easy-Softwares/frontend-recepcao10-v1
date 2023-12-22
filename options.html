@@ -1,47 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-    <div class="container">
-        <input type="checkbox" id="checkbox-menu">
-        <label for="checkbox-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opções</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="options-container">
+      <h2>Escolha uma opção:</h2>
+
+      <div class="card" onclick="window.location.href='cadastro.html'">
+        <h3>Cadastro de Visitantes</h3>
+        <p>Cadastre novos visitantes aqui.</p>
+      </div>
+
+      <div class="card" onclick="window.location.href='atualizar.html'">
+        <h3>Atualizar Dados</h3>
+        <p>Atualize os dados dos visitantes registrados.</p>
+      </div>
+
+      <div class="card" onclick="window.location.href='relatorios.html'">
+        <h3>Relatórios</h3>
+        <p>Veja relatórios e estatísticas.</p>
+      </div>
     </div>
 
-    <div class="page">
-    <section class="secao4" id="sobre">
-        <div class="secao4-div">
-            <!-- Card 1 -->
-            <div class="secao4-div-card" href="cadastro.html">
-                <a href="cadastro.html"><img src="Image/cadastro.png" alt="Cadastro de visitante">
-                <h5>CADASTRAR NOVO VISITANTE</h5></a>
-            </div>
-    
-            <!-- Card 2 -->
-            <div class="secao4-div-card">
-                <a href="alterar.html"><img src="Image/alterar.png" alt="Alterar visitante">
-                <h5>ALTERAR VISITANTE</h5></a>
-            </div>
-    
-            <!-- Card 3 -->
-            <div class="secao4-div-card">
-                <a href="relatorio.html"><img src="Image/imprimindo-contorno-do-botao.png" alt="Exibir relatório de visitantes">
-                <h5>EXIBIR RELATÓRIO DE VISITANTE</h5></a>
-            </div>
-        </div>
-    </section>
-
-    <a class="butback" href="index.html"><h3>Voltar</h3></a>
-
-    </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

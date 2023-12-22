@@ -2,14 +2,30 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   background: linear-gradient(135deg, #2ecc71, #3498db);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Adicionado para a navbar não ficar ao lado do conteúdo */
 }
 
-.login-container,
+.navbar {
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  position: fixed; /* Adicionado para fixar a navbar no topo */
+  width: 100%;
+  z-index: 1000; /* Adicionado para garantir que a navbar esteja acima do conteúdo */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
 .options-container {
   background-color: #fff;
   padding: 40px;
@@ -18,25 +34,31 @@ body {
   width: 300px;
   text-align: center;
   animation: fadeIn 0.5s ease-in-out;
-  margin: 0 auto; /* Centralizar o container */
+  margin: 80px auto 0; /* Ajustado para dar espaço abaixo da navbar */
 }
 
-.login-container h2,
 .options-container h2 {
   color: #333;
   margin-bottom: 20px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 label {
   display: block;
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   color: #666;
 }
 
-input {
+input,
+select {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -56,31 +78,12 @@ button:hover {
   background-color: #219f56;
 }
 
-.forgot-password a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
+.cancelar-button {
+  background-color: #e74c3c;
 }
 
-.forgot-password a:hover {
-  color: #27ae60;
-}
-
-.card {
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 15px;
-  margin: 10px 0;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.card:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-  color: #333;
+.cancelar-button:hover {
+  background-color: #c0392b;
 }
 
 @keyframes fadeIn {
@@ -94,18 +97,6 @@ button:hover {
   }
 }
 
-/* Adicionando regras de mídia para telas menores que 320px */
-@media (max-width: 320px) {
-  .login-container,
-  .options-container {
-    width: 80%;
-  }
-}
-
-/* Adicionando regras de mídia para telas menores que 375px */
-@media (max-width: 375px) {
-  .login-container,
-  .options-container {
-    width: 70%;
-  }
+body.atualizar-page .navbar a:nth-child(3) {
+  color: #000000; /* Cor vermelha para o link de Atualizar */
 }
