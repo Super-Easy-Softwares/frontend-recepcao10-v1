@@ -15,9 +15,6 @@ body {
   border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-around;
-  position: fixed; /* Adicionado para fixar a navbar no topo */
-  width: 100%;
-  z-index: 1000; /* Adicionado para garantir que a navbar esteja acima do conteúdo */
 }
 
 .navbar a {

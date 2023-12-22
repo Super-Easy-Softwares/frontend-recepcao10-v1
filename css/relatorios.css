@@ -15,9 +15,6 @@ body {
   border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-around;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
 }
 
 .navbar a {
