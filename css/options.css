@@ -1,0 +1,160 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2ecc71, #3498db);
+}
+
+.login-container,
+.options-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  margin: 0 auto; /* Centralizar o container */
+}
+
+.login-container h2,
+.options-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #219f56;
+}
+
+.forgot-password a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.forgot-password a:hover {
+  color: #27ae60;
+}
+
+.card {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #333;
+}
+
+/* Adicione essa regra para estilizar as mensagens de erro */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -8px; /* Ajuste na margem superior para aproximar do campo */
+  display: block; /* Garante que a mensagem de erro ocupe um espaço mesmo se estiver vazia */
+}
+
+/* Adicione essa regra para destacar os campos com erro */
+input.error-field {
+  border-color: red;
+}
+
+/* Mesmas regras de estilo que já existem no seu arquivo options.css */
+/* ... */
+
+/* Adicione esta regra para estilizar a exibição do formulário de adição de visita */
+#addVisitForm {
+  text-align: left;
+  margin-top: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  appearance: none; /* Remove a aparência padrão do sistema operacional */
+  background: #fff
+    url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>')
+    no-repeat right 10px center; /* Adiciona um ícone de seta para baixo ao lado do campo */
+  background-size: 20px; /* Tamanho do ícone de seta */
+  cursor: pointer;
+}
+
+/* Estilizando as opções do campo de seleção */
+select option {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Adicione esta regra para estilizar a exibição do formulário de adição de visita */
+#addVisitForm {
+  text-align: left;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Adicionando regras de mídia para telas menores que 320px */
+@media (max-width: 320px) {
+  .login-container,
+  .options-container {
+    width: 80%;
+  }
+}
+
+/* Adicionando regras de mídia para telas menores que 375px */
+@media (max-width: 375px) {
+  .login-container,
+  .options-container {
+    width: 70%;
+  }
+}
