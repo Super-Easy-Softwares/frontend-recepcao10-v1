@@ -1,0 +1,94 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #2ecc71, #3498db);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.detalhes-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 80px auto 0;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.retornar-button {
+  background-color: #219f56;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: block; /* Faz o botão se comportar como bloco */
+  margin: 20px auto 0; /* Adiciona espaçamento e centraliza o botão */
+}
+
+.retornar-button:hover {
+  background-color: #1c8341;
+}
+
+/* Adicionando regras de mídia para telas menores que 320px */
+@media (max-width: 320px) {
+  .detalhes-container {
+    width: 80%;
+  }
+}
+
+/* Adicionando regras de mídia para telas menores que 375px */
+@media (max-width: 375px) {
+  .detalhes-container {
+    width: 70%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
