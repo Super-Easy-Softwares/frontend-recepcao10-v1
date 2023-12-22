@@ -97,6 +97,22 @@ button:hover {
   }
 }
 
+/* Adicionando regras de mídia para telas menores que 320px */
+@media (max-width: 320px) {
+  .login-container,
+  .options-container {
+    width: 80%;
+  }
+}
+
+/* Adicionando regras de mídia para telas menores que 375px */
+@media (max-width: 375px) {
+  .login-container,
+  .options-container {
+    width: 70%;
+  }
+}
+
 body.atualizar-page .navbar a:nth-child(3) {
   color: #000000; /* Cor vermelha para o link de Atualizar */
 }

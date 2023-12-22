@@ -81,3 +81,19 @@ button:hover {
     transform: translateY(0);
   }
 }
+
+/* Adicionando regras de mídia para telas menores que 320px */
+@media (max-width: 320px) {
+  .login-container,
+  .options-container {
+    width: 80%;
+  }
+}
+
+/* Adicionando regras de mídia para telas menores que 375px */
+@media (max-width: 375px) {
+  .login-container,
+  .options-container {
+    width: 70%;
+  }
+}
