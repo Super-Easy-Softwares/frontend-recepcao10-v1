@@ -83,6 +83,19 @@ button:hover {
   color: #333;
 }
 
+/* Adicione essa regra para estilizar as mensagens de erro */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -8px; /* Ajuste na margem superior para aproximar do campo */
+  display: block; /* Garante que a mensagem de erro ocupe um espaço mesmo se estiver vazia */
+}
+
+/* Adicione essa regra para destacar os campos com erro */
+input.error-field {
+  border-color: red;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
